@@ -2,6 +2,7 @@ package answers.question3.code;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 class Question3 {
     public static Map<Character, Integer> countDuplicateCharacters(String string) {
@@ -30,7 +31,12 @@ class Question3 {
 
     // add another approach to the problem
     public static Map<Character, Long> countDuplicateCharactersTwo(String string) {
-        var resultMap = new HashMap<Character, Long>();
+        Map<Character, Long> resultMap; // var does not work for some reason 🤷
+        // 1. first we will convert the characters in the string to an IntStream, using the `.chars()` method
+        // from the String.java class, and then, we can use the Stream API on it 😄
+        resultMap = string.chars()
+                .mapToObj(c -> (char) c) // map every integer representation back to character
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting())); // collect the character and its count
         return resultMap;
     }
 
