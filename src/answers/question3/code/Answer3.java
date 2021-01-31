@@ -8,7 +8,8 @@ class Question3 {
         var resultMap = new HashMap<Character, Integer>();
         // 1. use a loop to iterate the string, or use toCharArray() with for-each loop
         for (int index = 0; index < string.length(); index++) {
-
+            // 2. fetch a single character from the string and store it into `currentCharacter` variable
+            char currentCharacter = string.charAt(index);
         }
         return resultMap;
     }
