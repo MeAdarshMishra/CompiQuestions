@@ -32,7 +32,6 @@ class Answer2 {
                     char ch = string.charAt(i);
                     if (!Character.isWhitespace(ch)) {
                         Boolean put = chars.put(ch, true);
-                        System.out.println(put);
                         if (put != null) {
                             return response;
                         }
@@ -42,6 +41,7 @@ class Answer2 {
                     return response;
                 }
             }
+            response = true;
             return response;
         }
 
