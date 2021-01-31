@@ -28,6 +28,13 @@ class Question3 {
         return resultMap;
     }
 
+    // add another approach to the problem
+    public static Map<Character, Integer> countDuplicateCharactersTwo(String string) {
+        var resultMap = new HashMap<Character, Integer>();
+
+        return resultMap;
+    }
+
     public static void main(String[] args) {
         String message = "Competitive Programming Can Be A Little Bit Tricky!";
         System.out.println(countDuplicateCharacters(message));
