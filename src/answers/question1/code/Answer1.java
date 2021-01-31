@@ -2,7 +2,7 @@ package answers.question1.code;
 
 import java.util.*;
 
-class Question1 {
+class Answer1 {
     // Please try not to change anything in this method.
     public static void main(String[] args) {
         int[] numbers = new int[15];
