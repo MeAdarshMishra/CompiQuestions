@@ -29,9 +29,8 @@ class Question3 {
     }
 
     // add another approach to the problem
-    public static Map<Character, Integer> countDuplicateCharactersTwo(String string) {
-        var resultMap = new HashMap<Character, Integer>();
-
+    public static Map<Character, Long> countDuplicateCharactersTwo(String string) {
+        var resultMap = new HashMap<Character, Long>();
         return resultMap;
     }
 
