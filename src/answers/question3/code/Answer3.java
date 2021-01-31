@@ -35,8 +35,8 @@ class Question3 {
         // 1. first we will convert the characters in the string to an IntStream, using the `.chars()` method
         // from the String.java class, and then, we can use the Stream API on it 😄
         resultMap = string.chars()
-                .mapToObj(c -> (char) c) // map every integer representation back to character
-                .collect(Collectors.groupingBy(c -> c, Collectors.counting())); // collect the character and its count
+                .mapToObj(character -> (char) character) // map every integer representation back to character
+                .collect(Collectors.groupingBy(character -> character, Collectors.counting())); // collect the character and its count
         return resultMap;
     }
 
