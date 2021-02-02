@@ -29,7 +29,8 @@ public class Question4 {
     }
 
     public static void main(String[] args) {
-        findFirstNonRepeatedCharacter("Java is Awesome!");
+        char firstNonRepeatedCharacter = findFirstNonRepeatedCharacter("Java is Awesome!");
+        System.out.println("The first non-repeated character in the string is: '" + firstNonRepeatedCharacter + "'.");
     }
 }
 
