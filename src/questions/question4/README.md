@@ -19,29 +19,14 @@ Complete the method in the program given below that returns the first non-repeat
 Starter Code
 
 ```java
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+public class Question4 {
 
-class Question1 {
-    // Please try not to change anything in this method.
-    public static void main(String[] args) {
-        int[] numbers = new int[15];
-        addRandomNumbers(numbers);
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(findPairs(numbers, 10));
-    }
+    public static final int EXTENDED_ASCII_CODES = 256;
 
-    // Please try not to change anything in this method.
-    public static void addRandomNumbers(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            array[i] = new Random().nextInt() % 10;
-        }
-    }
-
-    // Try to complete this method.
-    public static List<String> findPairs(int[] numbers, int desiredSum) {
-        return null;
+    // Complete this method, feel free to overload this method and create an alternate approach for the solution
+    public char findFirstNonRepeatedCharacter(String string) {
+        return '\0';
     }
 }
+
 ```
