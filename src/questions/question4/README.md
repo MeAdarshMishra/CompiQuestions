@@ -28,5 +28,4 @@ public class Question4 {
         return '\0';
     }
 }
-
 ```
