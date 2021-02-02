@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-class Question3 {
+public class Answer3 {
     public static Map<Character, Integer> countDuplicateCharacters(String string) {
         var resultMap = new HashMap<Character, Integer>();
         // 1. use a loop to iterate the string, or use toCharArray() with for-each loop
