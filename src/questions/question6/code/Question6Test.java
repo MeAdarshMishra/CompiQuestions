@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class Question6Test {
 
-    @org.junit.jupiter.api.Test
+    // this is an alternate approach to check a palindrome (USE AS HINT ONLY)
     boolean isPalindrome(String string) {
         return string.equalsIgnoreCase(new StringBuilder(string).reverse().toString());
     }
