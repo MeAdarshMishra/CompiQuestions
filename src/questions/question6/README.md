@@ -19,7 +19,8 @@ Write a program that inputs a string from the user and checks whether the string
 Starter Code
 
 ```java
-import javax.swing.JOptionPane;
+import javax.swing.*;
+import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Question6 {
@@ -30,7 +31,8 @@ public class Question6 {
      * @return a Deque of characters from the "string".
      */
     private static Deque<Character> fillStack(String string) {
-        return null;
+        var stackOfCharacters = new ArrayDeque<Character>();
+        return stackOfCharacters;
     }
 
     /**
@@ -41,7 +43,9 @@ public class Question6 {
      * @return the reversed string.
      */
     private static String buildReverseString(String string) {
-        return null;
+        var stackOfCharacters = fillStack(string);
+        var stringBuilder = new StringBuilder();
+        return stringBuilder.toString();
     }
 
     /**
@@ -61,7 +65,7 @@ public class Question6 {
         JOptionPane.showMessageDialog(
                 null,
                 "'" + inputString + "' " +
-                        (isPalindrome(inputString) ? "is a " : "is not a")
+                        (isPalindrome(inputString) ? "is a " : "is not a ")
                         + "palindrome.",
                 "PALINDROME FINDER",
                 messageType
