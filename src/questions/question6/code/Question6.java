@@ -1,6 +1,7 @@
 package questions.question6.code;
 
 import javax.swing.*;
+import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Question6 {
@@ -11,7 +12,8 @@ public class Question6 {
      * @return a Deque of characters from the "string".
      */
     private static Deque<Character> fillStack(String string) {
-        return null;
+        var stackOfCharacters = new ArrayDeque<Character>();
+        return stackOfCharacters;
     }
 
     /**
@@ -22,7 +24,9 @@ public class Question6 {
      * @return the reversed string.
      */
     private static String buildReverseString(String string) {
-        return null;
+        var stackOfCharacters = fillStack(string);
+        var stringBuilder = new StringBuilder();
+        return stringBuilder.toString();
     }
 
     /**
