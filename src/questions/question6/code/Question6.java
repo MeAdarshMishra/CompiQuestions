@@ -13,6 +13,10 @@ public class Question6 {
      */
     private static Deque<Character> fillStack(String string) {
         var stackOfCharacters = new ArrayDeque<Character>();
+        for (int i = 0; i < string.length(); i++) {
+            stackOfCharacters.push(string.charAt(i));
+            ;
+        }
         return stackOfCharacters;
     }
 
@@ -26,6 +30,10 @@ public class Question6 {
     private static String buildReverseString(String string) {
         var stackOfCharacters = fillStack(string);
         var stringBuilder = new StringBuilder();
+        while (!stackOfCharacters.isEmpty()) {
+            var character = stackOfCharacters.pop();
+            stringBuilder.append(character);
+        }
         return stringBuilder.toString();
     }
 
@@ -36,8 +44,9 @@ public class Question6 {
      * @return true if the "string" and its reverse are the same, otherwise, false.
      */
     public static boolean isPalindrome(String string) {
-        return false;
+        return string.equalsIgnoreCase(buildReverseString(string));
     }
+
 
     /**
      * This method prints the output as a "Dialog Box".
